@@ -1,6 +1,6 @@
 const User = require('../models/user.model');
 
-exports.findAll = async(req , res) => {
+exports.findUsersProducts = async(req , res) => {
     console.log("Find all users products")
 
     try{
@@ -11,7 +11,7 @@ exports.findAll = async(req , res) => {
     }
 }
 
-exports.findOne = async(req, res) => {
+exports.findUserProducts = async(req, res) => {
     const username = req.params.username;
     console.log("Find products for user ", username);
 
@@ -23,7 +23,7 @@ exports.findOne = async(req, res) => {
     }
 }
 
-exports.create = async(req, res) => {
+exports.insertUserProduct = async(req, res) => {
     const username = req.body.username;
     const products = req.body.products;
     console.log("Insert products to user" , username);
@@ -65,7 +65,7 @@ exports.update = async(req , res) => {
     }
 }
 
-exports.delete = async(req , res) => {
+exports.deleteUserProduct = async(req , res) => {
     const username = req.params.username;
     const product_id = req.params.id
 
