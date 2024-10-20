@@ -1,0 +1,32 @@
+[
+  {
+    "product": "product 1",
+    "cost": 10,
+    "description": "Description for product 1" ,
+    "quantity": 40
+  },
+  {
+    "product": "product 2",
+    "cost": 20,
+    "description": "Description for product 2" ,
+    "quantity": 10
+  },
+  {
+    "product": "product 3",
+    "cost": 30,
+    "description": "Description for product 3",
+    "quantity": 20
+  },
+  {
+    "product": "product 4",
+    "cost": 40,
+    "description": "Description for product 4",
+    "quantity": 30
+  },
+  {
+    "product": "product 5",
+    "cost": 15,
+    "description": "Description for product 5",
+    "quantity": 20
+  }
+]
