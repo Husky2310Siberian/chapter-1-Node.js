@@ -1,10 +1,13 @@
 const User = require('../models/user.model')
 
+const logger = require("../logger/logger");
+
 exports.findAll = async(req , res) => {
     console.log("Find all users")
 
     try{
         const result = await User.find()
+        logger.info('success in reading all users')
         res.json({status: true , data:result})
     } catch(err) {
         res.json({status: false , data:err})
@@ -12,11 +15,11 @@ exports.findAll = async(req , res) => {
 }
 
 exports.findOne = async(req , res) => {
-    const surname = req.params.surname;
-    console.log("find user with surname " , surname);
+    const username = req.params.username;
+    console.log("find user with username " , username);
 
     try{
-        const result = await User.findOne({username: surname})
+        const result = await User.findOne({username: username})
         res.json({status: true , data: result})
     } catch(err) {
         res.json({status: false , data: err});

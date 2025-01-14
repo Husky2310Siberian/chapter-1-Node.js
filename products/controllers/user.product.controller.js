@@ -89,110 +89,128 @@ exports.deleteUserProduct = async(req , res) => {
 exports.stats1 = async(req , res) => {
     console.log("For all users sum by product and count");
 
-    try {
+    try{
         const result = await User.aggregate([
             {
                 $unwind: "$products"
             },
             {
                 $project: {
-                    _id:1, username:1, products:1
+                    _id:1 , username:1 , products:1
                 }
             },
-                {
-                    $group: {
-                        _id: {
-                            username: "$username",
-                            product: "$products.product"
-                        },
-                        totalAmount: {
-                            $sum: {
-                                $multiply: ["$products.cost", "$products.quantity"]
-                            }
-                        },
-                        count: {$sum:1}
+              {
+                $group: {
+                    _id: {
+                        username: "$username",
+                        product: "$products.product"   
+            },
+                totalAmount: {
+                    $sum: {
+                        $multiply: ["$products.cost", "$products.quantity"]
                     }
                 },
-                {
-                    $sort: {
-                        "_id.username":1, "_id.product":1}
+                count: {$sum:1}
+            }
+            }, 
+            {
+                $sort: {
+                    "_id.username": 1 , "_id.product" :1}
                 }
         ])
         res.json({status:true , data:result})
+        console.log("stats1")
     } catch(err) {
         res.json({status:false , data:err})
+        console.log("problem occured")
     }
 }
 
 exports.stats2 = async(req , res) => {
-    console.log("Stats 2")
+    console.log("stats2")
 
     try{
-        const result = await User.aggregate([
-            {
-                $unwind : "$products"
-            },
-            {
-                $project: {
-                    _id: 0,
-                    products:1
-                }
-            },
-            {
-                    $group : {
-                        _id: {product: "$products.product"},
-                        totalAmount: {
-                            $sum: {
-                                $multiply :["$products.cost", "$products.quantity"]
-                            }
-                        },
-                        count: {$sum: 1}
+        const result = await User.aggregate(
+            [
+
+                {
+                    $unwind: "$products"
+                },
+                {
+                    $project: {
+                        _id:0,
+                        products:1 
+                    }
+                },
+                {
+                    $group: {
+                        _id: {
+                            product:"$products.product"},
+                            totalAmount: {
+                                $sum: {
+                                    $multiply:["$products.quantity", "$products.cost"]
+                                }
+                            },
+                            count: {
+                                $sum:1}
+                    }
+                },
+                {
+                    $sort: {
+                        "totalAmount":-1 , "count": 1
                     }
                 }
-        ])
+            ]
+        )
         res.json({status:true , data:result})
-    } catch(err){
+        console.log("stats2 ok")
+    }catch(err) {
         res.json({status:false , data:err})
+        console.log("problem occured")
     }
 }
 
-exports.statsByUsername = async(req , res) => {
+exports.stats3 = async(req , res) => {
     const username = req.params.username
     console.log("Stats by username" , username)
 
     try{
-        const result = await User.aggregate([
-            {
-                $match : {
-                    username : username
+        const result = await User.aggregate(
+            [
+                {
+                $match: {
+                    username: username
                 }
             },
             {
-                $unwind : "$products"
+                $unwind: "$products"
             },
             {
                 $project: {
-                    _id: 0,
-                    products:1
+                    _id:0 , products:1
                 }
             },
             {
-                    $group : {
-                        _id: {product: "$products.product"},
-                        totalAmount: {
+                $group: {
+                    _id: {
+                        product: "$products.product"}, 
+                        totalAmount : {
                             $sum: {
-                                $multiply :["$products.cost", "$products.quantity"]
+                                $multiply : ["$products.cost", "$products.quantity"]
                             }
                         },
-                        count: {$sum: 1}
-                    }
+                        count: {$sum:1}
                 }
+            },
+            {
+                $sort: {"totalAmount": -1
+                }
+            }
         ])
         res.json({status:true , data:result})
-    } catch(err){
+        console.log("stats3 ok")
+    }catch(err) {
         res.json({status:false , data:err})
+        console.log("problem occured")
     }
 }
-
-
-
