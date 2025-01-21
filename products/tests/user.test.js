@@ -41,6 +41,24 @@ describe("Tests for /api/users requests", () => {
         expect(result.body.status).toBeTruthy();
         expect(result.body.data).toBeTruthy
     })
+
+    it("POST /api/users request check for existed user", async() => {
+        const result = await request(app).post('/api/users')
+            .send({
+                username: "test4",
+                password:"12345",
+                name:"test4 name",
+                surname:"test4 surname",
+                email:"test@4aueb.gr",
+                address: {
+                    area:"area66",
+                    road:"road66"
+                }
+            });
+        expect(result.statusCode).toBe(200);
+        expect(result.body.status).toBeFalsy();
+        // expect(result.body.data).toBeTruthy();
+    })
 })
 
 describe("Tests for /api/users/{username} requests", () => {
@@ -54,6 +72,27 @@ describe("Tests for /api/users/{username} requests", () => {
         expect(result.body.data.username).toBe(results.username);
         expect(result.body.data.email).toBe(results.email)
     })
+
+    it("PATCH for /api/users/{username}" , async() => {
+        const results = await helpers.findLastInsertedUser();
+        const result = await request(app)
+            .patch('/api/users/' +results.username)
+            .send({
+                name: "new test4",
+                surname: "new test4",
+                email : "xxx@aueb.gr",
+                address : {
+                    area : "new area 4",
+                    road : "new road 4"
+                }
+            });
+            console.log(result.body.data);
+            expect(result.statusCode).toBe(200);
+            expect(result.body.status).toBeTruthy();
+            expect(result.body.data.name).toBe("new test4")
+            expect(result.body.data.surname).toBe("new test")
+    })
+
     it("DELETE /api/users/{username} " , async() => {
         const results = await helpers.findLastInsertedUser();
         console.log(results.username)
