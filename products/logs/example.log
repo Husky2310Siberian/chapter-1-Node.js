@@ -478,3 +478,9 @@
   label: 'winston custom format',
   timestamp: '21-01-2025 18:12:00'
 }
+{
+  message: 'success in reading all users',
+  level: 'info',
+  label: 'winston custom format',
+  timestamp: '21-01-2025 18:25:05'
+}

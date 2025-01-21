@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node --env-file=.env server.js",
     "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
     "dev": "nodemon --env-file=.env server.js"
   },
@@ -19,7 +20,7 @@
     "cors": "^2.8.5",
     
     "express": "^4.21.2",
-    "mongoose": "^8.9.3",
+    "mongoose": "^7.8.6",
     "mongoose-to-swagger": "^1.5.1",
     "mongoose-unique-validator": "^4.0.1",
     "swagger-ui-express": "^5.0.1",

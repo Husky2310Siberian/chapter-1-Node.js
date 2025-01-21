@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1737475926203" clover="3.2.0">
-  <project timestamp="1737475926203" name="All files">
-    <metrics statements="176" coveredstatements="135" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="12" elements="193" coveredelements="147" complexity="0" loc="176" ncloc="176" packages="6" files="9" classes="9"/>
+<coverage generated="1737476711782" clover="3.2.0">
+  <project timestamp="1737476711782" name="All files">
+    <metrics statements="176" coveredstatements="141" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="13" elements="193" coveredelements="154" complexity="0" loc="176" ncloc="176" packages="6" files="9" classes="9"/>
     <package name="products">
       <metrics statements="23" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
       <file name="index.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/index.js">
@@ -35,7 +35,7 @@
       </file>
     </package>
     <package name="products.controllers">
-      <metrics statements="102" coveredstatements="65" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="9"/>
+      <metrics statements="102" coveredstatements="71" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="10"/>
       <file name="user.controller.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/controllers/user.controller.js">
         <metrics statements="38" coveredstatements="34" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
         <line num="1" count="2" type="stmt"/>
@@ -78,7 +78,7 @@
         <line num="86" count="0" type="stmt"/>
       </file>
       <file name="user.product.controller.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/controllers/user.product.controller.js">
-        <metrics statements="64" coveredstatements="31" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="4"/>
+        <metrics statements="64" coveredstatements="37" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="5"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -111,12 +111,12 @@
         <line num="60" count="0" type="stmt"/>
         <line num="62" count="1" type="stmt"/>
         <line num="66" count="2" type="stmt"/>
-        <line num="67" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="81" count="0" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
         <line num="83" count="0" type="stmt"/>
         <line num="87" count="2" type="stmt"/>
         <line num="88" count="0" type="stmt"/>
@@ -209,10 +209,10 @@
       <file name="user.service.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/services/user.service.js">
         <metrics statements="13" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="6" count="6" type="stmt"/>
-        <line num="7" count="6" type="stmt"/>
-        <line num="8" count="6" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>

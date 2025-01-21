@@ -79,6 +79,18 @@ describe("TESTS for /api/user-product/{username}/products requests", () => {
             //console.log(result);      
             expect(res.statusCode).toBe(200);
             expect(result.products[0].quantity).toBe(20)
+        });
+        it("DELETE for /api/user-product/{username}/products/{id}", async()=> {
+            let result = await helpers.findLastInsertedUser();
+            const username = result.username
+            const id = result.products[0]._id;
 
-        })
+            const res = await request(app)
+                    .delete('/api/user-product/' +username + '/products/' +id)
+
+            result = await helpers.findLastInsertedUser()
+            console.log(result);
+            expect(res.statusCode).toBe(200)
+            expect(result.products.length).toBe(0)
+        });
     })
