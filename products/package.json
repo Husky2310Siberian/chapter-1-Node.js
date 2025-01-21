@@ -3,19 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
     "dev": "nodemon --env-file=.env server.js"
   },
   "jest": {
-    "collectCoerage": true,
+    "collectCoverage": true,
     "coveragePathIgnorePatterns": [
       "/node_modules/"
-    ]
+    ],
+    "setupFiles" : ["dotenv/config"]
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    
     "express": "^4.21.2",
     "mongoose": "^8.9.3",
     "mongoose-to-swagger": "^1.5.1",
@@ -26,6 +28,8 @@
     "winston-mongodb": "^6.0.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
     "jest": "^29.7.0",
     "nodemon": "^3.1.9",
     "supertest": "^7.0.0"

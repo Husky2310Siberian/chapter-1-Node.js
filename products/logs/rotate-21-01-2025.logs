@@ -2,36 +2,6 @@
   message: 'success in reading all users',
   level: 'info',
   label: 'winston custom format',
-  timestamp: '14-01-2025 10:26:56'
-}
-{
-  message: 'success in reading all users',
-  level: 'info',
-  label: 'winston custom format',
-  timestamp: '14-01-2025 10:43:34'
-}
-{
-  message: 'success in reading all users',
-  level: 'info',
-  label: 'winston custom format',
-  timestamp: '14-01-2025 11:38:58'
-}
-{
-  message: 'success in reading all users',
-  level: 'info',
-  label: 'winston custom format',
-  timestamp: '14-01-2025 11:40:30'
-}
-{
-  message: 'success in reading all users',
-  level: 'info',
-  label: 'winston custom format',
-  timestamp: '14-01-2025 11:50:35'
-}
-{
-  message: 'success in reading all users',
-  level: 'info',
-  label: 'winston custom format',
   timestamp: '21-01-2025 09:13:23'
 }
 {
