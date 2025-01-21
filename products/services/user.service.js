@@ -12,4 +12,20 @@ async function findLastInsertedUser() {
     }
 }
 
-module.exports = {findLastInsertedUser};
+async function findUsersProduct(username) {
+    console.log("Find user's product", username);
+
+
+    try{
+        const result = await User.findOne(
+        {username: username},
+        {username:1 , products:1})
+        // console.log(result)
+        return result;
+    }catch(err){
+        console.log("Proble in finding user's product")
+        return false;
+    }
+}
+
+module.exports = {findLastInsertedUser, findUsersProduct};

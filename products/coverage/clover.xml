@@ -1,220 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1737455889332" clover="3.2.0">
-  <project timestamp="1737455889332" name="All files">
-    <metrics statements="170" coveredstatements="109" conditionals="0" coveredconditionals="0" methods="16" coveredmethods="7" elements="186" coveredelements="116" complexity="0" loc="170" ncloc="170" packages="6" files="9" classes="9"/>
+<coverage generated="1737475926203" clover="3.2.0">
+  <project timestamp="1737475926203" name="All files">
+    <metrics statements="176" coveredstatements="135" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="12" elements="193" coveredelements="147" complexity="0" loc="176" ncloc="176" packages="6" files="9" classes="9"/>
     <package name="products">
       <metrics statements="23" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
       <file name="index.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/index.js">
         <metrics statements="20" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
       </file>
       <file name="swagger.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/swagger.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
       </file>
     </package>
     <package name="products.controllers">
-      <metrics statements="102" coveredstatements="43" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="5"/>
+      <metrics statements="102" coveredstatements="65" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="9"/>
       <file name="user.controller.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/controllers/user.controller.js">
         <metrics statements="38" coveredstatements="34" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
         <line num="30" count="2" type="stmt"/>
         <line num="42" count="2" type="stmt"/>
         <line num="44" count="2" type="stmt"/>
         <line num="45" count="2" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
-        <line num="52" count="1" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
         <line num="53" count="1" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
         <line num="56" count="1" type="stmt"/>
         <line num="66" count="1" type="stmt"/>
         <line num="67" count="1" type="stmt"/>
-        <line num="70" count="1" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="76" count="1" type="stmt"/>
-        <line num="77" count="1" type="stmt"/>
-        <line num="78" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="79" count="1" type="stmt"/>
         <line num="80" count="1" type="stmt"/>
-        <line num="81" count="1" type="stmt"/>
         <line num="82" count="1" type="stmt"/>
-        <line num="84" count="0" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="86" count="0" type="stmt"/>
       </file>
       <file name="user.product.controller.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/controllers/user.product.controller.js">
-        <metrics statements="64" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
+        <metrics statements="64" coveredstatements="31" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="4"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="53" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="68" count="1" type="stmt"/>
-        <line num="69" count="0" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
         <line num="70" count="0" type="stmt"/>
         <line num="72" count="0" type="stmt"/>
-        <line num="74" count="0" type="stmt"/>
-        <line num="75" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
         <line num="83" count="0" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="89" count="1" type="stmt"/>
+        <line num="87" count="2" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
         <line num="90" count="0" type="stmt"/>
-        <line num="92" count="0" type="stmt"/>
-        <line num="93" count="0" type="stmt"/>
-        <line num="121" count="0" type="stmt"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="119" count="0" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
         <line num="122" count="0" type="stmt"/>
-        <line num="124" count="0" type="stmt"/>
-        <line num="125" count="0" type="stmt"/>
-        <line num="129" count="1" type="stmt"/>
+        <line num="123" count="0" type="stmt"/>
+        <line num="127" count="2" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
         <line num="130" count="0" type="stmt"/>
-        <line num="132" count="0" type="stmt"/>
-        <line num="133" count="0" type="stmt"/>
+        <line num="131" count="0" type="stmt"/>
+        <line num="162" count="0" type="stmt"/>
+        <line num="163" count="0" type="stmt"/>
         <line num="165" count="0" type="stmt"/>
         <line num="166" count="0" type="stmt"/>
-        <line num="168" count="0" type="stmt"/>
-        <line num="169" count="0" type="stmt"/>
-        <line num="173" count="1" type="stmt"/>
+        <line num="170" count="2" type="stmt"/>
+        <line num="171" count="0" type="stmt"/>
+        <line num="172" count="0" type="stmt"/>
         <line num="174" count="0" type="stmt"/>
         <line num="175" count="0" type="stmt"/>
-        <line num="177" count="0" type="stmt"/>
-        <line num="178" count="0" type="stmt"/>
+        <line num="207" count="0" type="stmt"/>
+        <line num="208" count="0" type="stmt"/>
         <line num="210" count="0" type="stmt"/>
         <line num="211" count="0" type="stmt"/>
-        <line num="213" count="0" type="stmt"/>
-        <line num="214" count="0" type="stmt"/>
       </file>
     </package>
     <package name="products.logger">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="logger.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/logger/logger.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
       </file>
     </package>
     <package name="products.models">
       <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="user.model.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/models/user.model.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="71" count="1" type="stmt"/>
-        <line num="73" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="71" count="2" type="stmt"/>
+        <line num="73" count="2" type="stmt"/>
       </file>
     </package>
     <package name="products.routes">
       <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="user.product.routes.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/routes/user.product.routes.js">
         <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
       </file>
       <file name="user.routes.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/routes/user.routes.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
       </file>
     </package>
     <package name="products.services">
-      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="13" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="user.service.js" path="/Users/vasiliskr/3.Webdev-aueb-course/node/node-chapter-1/products/services/user.service.js">
-        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
+        <metrics statements="13" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
       </file>
     </package>
   </project>

@@ -64,7 +64,7 @@ describe("Tests for /api/users requests", () => {
 describe("Tests for /api/users/{username} requests", () => {
     it("GET /api/users/{username}" , async() => {
         const results = await helpers.findLastInsertedUser();
-        console.log(results.username)
+        // console.log(results.username)
         const result = await request(app).get('/api/users/' +results.username);
 
         expect(result.statusCode).toBe(200);
@@ -86,11 +86,11 @@ describe("Tests for /api/users/{username} requests", () => {
                     road : "new road 4"
                 }
             });
-            console.log(result.body.data);
+            // console.log(result.body.data);
             expect(result.statusCode).toBe(200);
             expect(result.body.status).toBeTruthy();
             expect(result.body.data.name).toBe("new test4")
-            expect(result.body.data.surname).toBe("new test")
+            expect(result.body.data.surname).toBe("new test4")
     })
 
     it("DELETE /api/users/{username} " , async() => {

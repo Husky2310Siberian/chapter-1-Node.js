@@ -47,9 +47,7 @@ exports.updateUserController = async(req , res) => {
     const username = req.params.username;
     const product_id = req.body.product._id;
     const quantity = req.body.product.quantity
-
     console.log("Update product quantity for user", username)
-
     try {
         const result = await User.findOneAndUpdate(
             {username: username, "products._id": product_id},
@@ -132,7 +130,6 @@ exports.stats2 = async(req , res) => {
     try{
         const result = await User.aggregate(
             [
-
                 {
                     $unwind: "$products"
                 },
